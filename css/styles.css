@@ -15,6 +15,10 @@ a {
   max-width: 1200px;
   margin: 0 auto;
 }
+img {
+  max-width: 100%;
+  display: block;
+}
 
 .contenedor-navegacion {
   border-top: 1px solid #e1e1e1;
@@ -42,17 +46,30 @@ a {
 }
 
 .nav-principal {
+  display: flex;
+  justify-content: space-between;
   padding: 20px 0px;
 }
 
-.sobre-nosotros {
-  background-color: red;
-  width: 200px;
-  padding: 25px;
+.categorias h2 {
+  text-align: center;
 }
 
-.sobre-empresa {
-  background-color: blue;
-  width: 500px;
-  padding: 100px;
+.categoria a {
+  text-align: center;
+  display: block;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.categoria a:hover {
+  background-color: #037bc0;
+  color: #fff;
+  border-bottom-right-radius: 10px;
+}
+
+.listado-categorias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
